@@ -4,7 +4,7 @@
 	%p#submit Submitted by- 
 	%p=@legislature.user.email
 	= link_to like_legislature_path(@legislature), method: :put, class: 'btn-btn-default' do
-		%span.glyphicon.glyphicon-upload
+		%span.glyphicon.glyphicon-hand-up
 			= @legislature.get_upvotes.size
 		%br 
 		%br
