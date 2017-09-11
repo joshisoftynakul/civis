@@ -1,0 +1,15 @@
+.legislatures_style
+	%h1=@legislature.title
+	%p=raw(@legislature.content)
+	%p#submit Submitted by- 
+	%p=@legislature.user.email
+	= link_to like_legislature_path(@legislature), method: :put, class: 'btn-btn-default' do
+		%span.glyphicon.glyphicon-upload
+			= @legislature.get_upvotes.size
+		%br 
+		%br
+	= link_to "Back", root_path, class: 'btn btn-primary crud'
+	- if user_signed_in?
+		-if @legislature.user_id == current_user.id
+			= link_to "Edit", edit_legislature_path, class: 'btn btn-primary crud'
+			= link_to "Delete", legislature_path, method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-primary crud'

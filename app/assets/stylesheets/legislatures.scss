@@ -1,0 +1,55 @@
+// Place all the styles related to the legislatures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+.lists{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	color: #363636;
+}
+.create_button{
+	text-align: center;
+	padding-top: 20px;
+}
+.legislatures_style{
+	text-align: center;
+	h1{
+		padding-bottom: 4%;
+		font-weight: 700;
+	}
+	p{
+		font-family: 'Libre Baskerville', serif;
+		font-size: 1.4em;
+		line-height: 35px;	
+		color: #363636;
+		padding-bottom: 1%;
+	}
+	#submit{
+		font-style: italic;
+		font-weight: 500;
+		color: #7f8c8d;
+	}
+	.trend{
+		max-width: 40px;
+		max-height: 40px;
+	}
+	.lists{
+		padding-top: 3%;
+		padding-left: 20%;
+		text-align: left;
+	}
+	.legs{
+		color: #363636;
+		text-decoration: none;
+		font-family: 'Libre Baskerville', serif;
+		font-weight: 500;
+	}
+
+}
+.crud{
+	padding-left: 2%;
+	padding-right: 2%;
+}

@@ -1,0 +1,9 @@
+.legislatures_style
+
+	%h1 
+		On Now!
+		= image_tag "Trending.png", class: 'trend'
+	- @legislatures.each do |leg|
+		.lists
+			= link_to leg.title, leg, class: 'legs'
+		

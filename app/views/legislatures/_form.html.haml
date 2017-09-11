@@ -1,0 +1,6 @@
+= simple_form_for @legislature, html: {class: "form-horizontal"} do |f|
+	= f.error_notification
+	= f.input :title,label: false, placeholder: "Title"
+	= f.cktext_area :content,label: false, placeholder: "Content"
+	.create_button
+		= f.button :submit, class: "btn btn-primary"
